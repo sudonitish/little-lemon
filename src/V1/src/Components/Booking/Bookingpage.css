@@ -1,0 +1,159 @@
+.booking-form-container {
+    width: 700px;
+    margin: 70px auto;
+    padding: 30px;
+    background-color: #edefee;
+    border-radius: 20px;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #495e57;
+    font-family: "Markazi Text", serif;
+    font-size: 42px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 15px;
+  }
+  
+  .form-step {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-step .btn-sets{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  form .grps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+form .text-set {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+form .grps .text-set{
+    color: #000;
+    font-family: "Karla", sans-serif;
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+form .grps .text-set label{
+    margin-bottom: 6px;
+}
+
+form .grps .text-set label span{
+    color: red;
+    font-weight: 600;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.details .set-imaging{
+  max-width: 320px;
+}
+
+.details .set-imaging img{
+    width: 100%;
+    border-radius: 10px;
+}
+  
+  input, select {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    background-color: #d9d9d9;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    color: #949494;
+    font-weight: 500;
+  }
+
+  ::placeholder{
+font-family: "Karla", sans-serif;
+color: #949494;
+font-size: 16px;
+font-weight: 500;
+  }
+  
+  input:focus, select:focus {
+    border-color: #2e4a42;
+  }
+  
+  button {
+    background-color: #2e4a42;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 49%;
+    font-family: "Karla", sans-serif;
+    font-size: 18px;
+    margin: 0 auto!important;
+}
+
+  
+  button:hover {
+    background-color: #1f332c;
+  }
+  
+  button[type="button"] {
+    margin: 5px 0;
+  }
+  
+  p {
+    margin: 10px 0;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+  }
+  
+  strong {
+    color: #2e4a42;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Karla", sans-serif;
+  }
+  
+  /* For multi-step navigation */
+  button[type="submit"] {
+    background-color: #ff9800;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #e68900;
+  }
+  
+  /* Style the back button */
+  button[type="button"][onClick="prevStep"] {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  button[type="button"][onClick="prevStep"]:hover {
+    background-color: #b3b3b3;
+  }
